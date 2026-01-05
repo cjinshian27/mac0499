@@ -1,0 +1,247 @@
+  <!DOCTYPE html>
+  <html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MAC0499 - TCC</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+  <body>
+    <h1>MAC0499 - Trabalho de Conclusão de Curso</h1>
+    <h2> Florestas geradoras maximais de custo mínimo em grafos dinâmicos</h2>
+    <hr />
+
+    <p><strong>Aluno:</strong></p>
+    <ul>
+      <li>Chung Jin Shian - NUSP 12543482 (cjinshian77@usp.br)</li>
+    </ul>
+
+    <p><strong>Orientadora:</strong></p>
+    <ul>
+      <li>
+        <a href="https://www.ime.usp.br/~cris/" target="_blank">Prof<sup>a</sup>. Dr<sup>a</sup>. Cristina Gomes Fernandes</a>
+      </li>
+    </ul>
+    <hr />
+
+
+    <section class="repositorio">
+      <h3>Implementação</h3>
+      <p>
+        O repositório com as implementações pode ser acessado
+        <a href="https://github.com/cjinshian27/TCC" target="_blank">aqui</a>
+        <img class="github-icon" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" />
+      </p>
+
+      <section class="poster">
+        <h3>Pôster</h3>
+        <p>
+          O link do pôster pode ser acessado
+          <a href="https://linux.ime.usp.br/~cjinshian/mac0499/poster.pdf" target="_blank">aqui</a>.
+        </p>
+      </section>
+
+
+      <section class="monografia">
+        <h3>Monografia</h3>
+        <p>
+          O link da monografia (em progresso) pode ser acessado
+          <a href="https://linux.ime.usp.br/~cjinshian/mac0499/tese.pdf" target="_blank">aqui</a>.
+        </p>
+      </section>
+    </section>
+
+    <hr/>
+    <section class="resumo">
+      <h3>Resumo</h3>
+      <p>
+
+        Grafos dinâmicos permitem modelar problemas em que o grafo sofre alterações ao longo do tempo.
+        Um dos problemas fundamentais nesse contexto é a manutenção de uma árvore geradora de custo mínimo
+        no decorrer de várias alterações no grafo. Neste trabalho, estudamos e implementamos vários algoritmos
+        propostos por <a href="#bottom">  Holm, de Lichtenberg e Thorup [4] </a>  para variantes desse problema. O foco foi no algoritmo
+        para manter uma floresta geradora maximal de custo mínimo (MSF) decremental, em que se dá suporte
+        eficiente à remoção de arestas do grafo. Além disso, estudamos as ideias usadas num algoritmo
+        que mantém uma floresta geradora maximal de custo mínimo (MSF) em um grafo dinâmico, em que se dá
+        suporte eficiente à adição e remoção de arestas.
+      </p>
+
+  </section>
+
+  <hr />
+
+
+    <section class="detalhamento">
+      <h3>Detalhamento</h3>
+      <ul>
+        <li>
+          <strong>A1: </strong> Revisar a implementação do algoritmo de  Holm et al para conexidade em florestas dinâmicas, que
+          foi realizada durante a disciplina de  <a href="#bottom"> Estruturas de Dados Avançadas [2] </a> oferecida em 2023.
+        </li>
+
+        <li>
+          <strong>A2: </strong> estudar o capítulo 4 da dissertação de mestrado do <a href="#bottom"> Arthur Henrique Dias Rodrigues [3]</a>, que
+          descreve o algoritmo de conexidade em grafos dinâmicos utilizando a implementação de florestas dinâmicas.
+        </li>
+
+        <li>
+          <strong>A3: </strong> implementar o algoritmo estudado em A2 usando a implementação revisada em A1.
+        </li>
+
+        <li>
+          <strong>A4: </strong> estudar a seção 4 do artigo de <a href="#bottom"> Holm, Lichtenberg e Thorup [4]</a>, 
+          onde é descrito o algoritmo decremental para árvores geradoras de custo mínimo.
+        </li>
+
+        <li>
+          <strong>A5: </strong> implementar o algoritmo estudado em A4, que é uma adaptação do algoritmo implementado em A3.
+        </li>
+
+        <li>
+          <strong>A6: </strong> escrever a parte da monografia sobre:
+
+          <ul>
+            <li>
+              grafos dinâmicos; 
+            </li>
+            <li>
+              conexidade dinâmica;
+            </li>
+            <li>
+              o problema da árvore geradora de custo mínimo dinâmico e seu caso particular decremental; 
+            </li>
+            <li>
+              o algoritmo implementado para árvore geradora de custo mínimo decremental.
+            </li>
+          </ul>
+
+        </li>
+
+        <li>
+          <strong>A7: </strong> estudar o algoritmo totalmente dinâmico para árvores geradoras de custo mínimo, que é    descrito na seção 5 do artigo de<a href="#bottom"> Holm, Lichtenberg e Thorup [4]</a>.
+        </li>
+
+        <li>
+          <strong>A8: </strong> escrever a parte da monografia estudada em A7.
+        </li>
+    <li>
+          <strong>A9: </strong> finalizar a monografia.
+        </li>
+      </ul>
+
+    </section>
+    <hr />
+
+
+    <section class="cronograma">
+      <h3>Cronograma</h3>
+
+      <table border="1" cellspacing="0" cellpadding="8">
+        <thead>
+          <tr>
+            <th>Atividade</th>
+            <th>Mar</th>
+            <th>Abr</th>
+            <th>Mai</th>
+            <th>Jun</th>
+            <th>Jul</th>
+            <th>Ago</th>
+            <th>Set</th>
+            <th>Out</th>
+            <th>Nov</th>
+            <th>Dez</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>A1</td>
+            <td style="background-color:#66ff99">X</td>
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+          </tr>
+          <tr>
+            <td>A2</td>
+            <td style="background-color:#66ff99">X</td>
+            <td style="background-color:#66ff99">X</td>
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+          </tr>
+          <tr>
+            <td>A3</td>
+            <td style="background-color:#66ff99">X</td>
+            <td style="background-color:#66ff99">X</td>
+            <td style="background-color:#66ff99">X</td>
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+          </tr>
+          <tr>
+            <td>A4</td>
+            <td></td><td></td>
+            <td style="background-color:#66ff99">X</td>
+            <td style="background-color:#66ff99">X</td>
+            <td></td><td></td><td></td><td></td><td></td><td></td>
+          </tr>
+      <tr>
+            <td>A5</td>
+            <td></td><td></td>
+            <td style="background-color:#66ff99">X</td>
+            <td style="background-color:#66ff99">X</td>
+            <td style="background-color:#66ff99">X</td>
+            <td></td><td></td><td></td><td></td><td></td>
+          </tr>
+          <tr>
+            <td>A6</td>
+            <td></td><td></td><td></td><td></td>
+            <td style="background-color:#66ff99">X</td>
+            <td style="background-color:#66ff99">X</td>
+            <td style="background-color:#66ff99">X</td>
+            <td style="background-color:#66ff99">X</td>
+            <td></td><td></td>
+          </tr>
+          <tr>
+            <td>A7</td>
+            <td></td><td></td><td></td><td></td><td></td><td></td>
+            <td style="background-color:#66ff99">X</td>
+            <td style="background-color:#66ff99">X</td>
+            <td></td><td></td>
+          </tr>
+          <tr>
+            <td>A8</td>
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            <td style="background-color:#66ff99">X</td>
+            <td style="background-color:#66ff99">X</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>A9</td>
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            <td style="background-color:#66ff99">X</td>
+            <td style="background-color:#66ff99">X</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </section>
+    <hr />
+    <section class="referencias-bibliograficas">
+      <h3 id="bottom">Referências bibliográficas</h3>
+      <ul>
+        <li>
+          <a href="https://courses.csail.mit.edu/6.851/spring12/lectures/L20.html" target="_blank">[1] Curso de Estruturas de Dados Avançadas (Prof. Erik Demaine)</a>
+        </li>
+        <li>
+          <a href="https://www.ime.usp.br/~cris/aulas/23_2_6957/outubro.html" target="_blank"> [2] Anotações das aulas de 2023 da Prof. Cristina Gomes Fernandes</a>
+        </li>
+
+        <li>
+          <a href="https://drive.google.com/file/d/14RhbF4JPT78PAFQFCQr-EzOuKSHv0Bv-/view?usp=sharing">[3] Dissertação de mestrado do Arthur Henrique Dias Rodrigues, IME-USP, 2024.</a>
+        </li>
+
+        <li>
+          <a href="https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=1f63499a9cb43f0f4d6a56b37de551c7e0c94971">[4] HOLM, J.; LICHTENBERG, K.; THORUP, M. Poly-Logarithmic Deterministic <br> Fully-Dynamic Algorithms
+            for Connectivity, Minimum Spanning Tree, 2-Edge, <br>
+            and Biconnectivity. Journal of the ACM, Vol. 48, No. 4, 2001, pp. 723-760. </a>
+        </li>
+      </ul>
+    </section>
+
+  </body>
+  </html>
